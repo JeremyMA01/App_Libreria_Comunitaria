@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ApiMovies/ApiMovies.csproj" Id="635efc37-d31d-4ffa-9b13-14ae01d86100" />
+  <Project Path="CodeFirstClases/CodeFirstClases.csproj" />
+  <Project Path="PruebasEntityFramework/PruebasEntityFramework.csproj" Id="16000fd6-fbe1-4366-bd8e-04c559d34465" />
+</Solution>

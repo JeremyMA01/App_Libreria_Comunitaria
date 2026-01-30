@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{635EFC37-D31D-4FFA-9B13-14AE01D86100}|ApiMovies\\ApiMovies.csproj|c:\\users\\cristhian\\source\\repos\\codefirstclases\\apimovies\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635EFC37-D31D-4FFA-9B13-14AE01D86100}|ApiMovies\\ApiMovies.csproj|solutionrelative:apimovies\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16000FD6-FBE1-4366-BD8E-04C559D34465}|PruebasEntityFramework\\PruebasEntityFramework.csproj|c:\\users\\cristhian\\source\\repos\\codefirstclases\\pruebasentityframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16000FD6-FBE1-4366-BD8E-04C559D34465}|PruebasEntityFramework\\PruebasEntityFramework.csproj|solutionrelative:pruebasentityframework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9938512-7C49-0D8E-C38F-C4B2D7B6EEF1}|CodeFirstClases\\CodeFirstClases.csproj|c:\\users\\cristhian\\source\\repos\\codefirstclases\\codefirstclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9938512-7C49-0D8E-C38F-C4B2D7B6EEF1}|CodeFirstClases\\CodeFirstClases.csproj|solutionrelative:codefirstclases\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\ApiMovies\\Program.cs",
+              "RelativeDocumentMoniker": "ApiMovies\\Program.cs",
+              "ToolTip": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\ApiMovies\\Program.cs",
+              "RelativeToolTip": "ApiMovies\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T23:33:03.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\PruebasEntityFramework\\Program.cs",
+              "RelativeDocumentMoniker": "PruebasEntityFramework\\Program.cs",
+              "ToolTip": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\PruebasEntityFramework\\Program.cs",
+              "RelativeToolTip": "PruebasEntityFramework\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T21:32:33.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\CodeFirstClases\\Class1.cs",
+              "RelativeDocumentMoniker": "CodeFirstClases\\Class1.cs",
+              "ToolTip": "C:\\Users\\CRISTHIAN\\source\\repos\\CodeFirstClases\\CodeFirstClases\\Class1.cs",
+              "RelativeToolTip": "CodeFirstClases\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T21:32:11.42Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
