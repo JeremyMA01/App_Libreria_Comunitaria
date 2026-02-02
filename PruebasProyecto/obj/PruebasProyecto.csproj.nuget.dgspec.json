@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\PruebasProyecto.csproj": {}
+    "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {}
   },
   "projects": {
-    "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_Comunitaria.csproj": {
+    "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_Comunitaria.csproj",
+        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
         "projectName": "App_Libreria_Comunitaria",
-        "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_Comunitaria.csproj",
+        "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
         "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
-        "outputPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\obj\\",
+        "outputPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -365,14 +365,14 @@
         }
       }
     },
-    "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\PruebasProyecto.csproj": {
+    "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\PruebasProyecto.csproj",
+        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
         "projectName": "PruebasProyecto",
-        "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\PruebasProyecto.csproj",
+        "projectPath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
         "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
-        "outputPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\obj\\",
+        "outputPath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -393,8 +393,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_Comunitaria.csproj": {
-                "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_Comunitaria.csproj"
+              "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+                "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj"
               }
             }
           }

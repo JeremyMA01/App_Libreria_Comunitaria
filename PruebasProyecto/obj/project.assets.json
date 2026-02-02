@@ -1245,6 +1245,20 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "App_Libreria_Comunitaria/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.2"
+        },
+        "compile": {
+          "bin/placeholder/App_Libreria_Comunitaria.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App_Libreria_Comunitaria.dll": {}
+        }
       }
     }
   },
@@ -3649,10 +3663,16 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "App_Libreria_Comunitaria/1.0.0": {
+      "type": "project",
+      "path": "../App_Libreria_Comunitaria/App_Libreria_Comunitaria.csproj",
+      "msbuildProject": "../App_Libreria_Comunitaria/App_Libreria_Comunitaria.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "App_Libreria_Comunitaria >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.2",
@@ -3666,11 +3686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
-      "projectName": "App_Libreria_Comunitaria",
-      "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+      "projectUniqueName": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
+      "projectName": "PruebasProyecto",
+      "projectPath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
       "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
-      "outputPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
+      "outputPath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3690,7 +3710,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+              "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
