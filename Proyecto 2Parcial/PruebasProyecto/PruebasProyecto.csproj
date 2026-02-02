@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proyecto 2Parcial\Proyecto 2Parcial.csproj" />
+    <ProjectReference Include="..\Proyecto 2Parcial\App_Libreria_comunitaria.csproj" />
   </ItemGroup>
 
 </Project>
