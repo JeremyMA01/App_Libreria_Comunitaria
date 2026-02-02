@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="App_Libreria_Comunitaria/App_Libreria_Comunitaria.csproj" />
+  <Project Path="PruebasProyecto/PruebasProyecto.csproj" />
+</Solution>
