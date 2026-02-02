@@ -4,12 +4,12 @@
     "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\PruebasProyecto\\PruebasProyecto.csproj": {}
   },
   "projects": {
-    "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj": {
+    "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj",
-        "projectName": "App_Libreria_comunitaria",
-        "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj",
+        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj",
+        "projectName": "Proyecto 2Parcial",
+        "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj",
         "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
         "outputPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\obj\\",
         "projectStyle": "PackageReference",
@@ -393,8 +393,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj": {
-                "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj"
+              "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj": {
+                "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj"
               }
             }
           }

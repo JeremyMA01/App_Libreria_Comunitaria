@@ -683,7 +683,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "App_Libreria_comunitaria/1.0.0": {
+      "Proyecto 2Parcial/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
@@ -691,10 +691,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.2"
         },
         "compile": {
-          "bin/placeholder/App_Libreria_comunitaria.dll": {}
+          "bin/placeholder/Proyecto 2Parcial.dll": {}
         },
         "runtime": {
-          "bin/placeholder/App_Libreria_comunitaria.dll": {}
+          "bin/placeholder/Proyecto 2Parcial.dll": {}
         }
       }
     }
@@ -1681,15 +1681,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "App_Libreria_comunitaria/1.0.0": {
+    "Proyecto 2Parcial/1.0.0": {
       "type": "project",
-      "path": "../Proyecto 2Parcial/App_Libreria_comunitaria.csproj",
-      "msbuildProject": "../Proyecto 2Parcial/App_Libreria_comunitaria.csproj"
+      "path": "../Proyecto 2Parcial/Proyecto 2Parcial.csproj",
+      "msbuildProject": "../Proyecto 2Parcial/Proyecto 2Parcial.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "App_Libreria_comunitaria >= 1.0.0"
+      "Proyecto 2Parcial >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1724,8 +1724,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj": {
-              "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\App_Libreria_comunitaria.csproj"
+            "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj": {
+              "projectPath": "C:\\App_Libreria_Comunitaria\\Proyecto 2Parcial\\Proyecto 2Parcial\\Proyecto 2Parcial.csproj"
             }
           }
         }
