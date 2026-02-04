@@ -11,6 +11,7 @@ namespace App_Libreria_Comunitaria.Contexts
         public DbSet<Book> books { get; set; }
         public DbSet<Genre> Genres { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=localhost;Database=BookPoyecto;User ID=sa;Password=1234;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
