@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Proyecto_2Parcial.Migrations
 {
-    [DbContext(typeof(ReviewContexts))]
-    [Migration("20260202203225_LibreriaComunitariaBD")]
-    partial class LibreriaComunitariaBD
+    [DbContext(typeof(BookContexts))]
+    [Migration("20260204151854_MigracionInicialBooks")]
+    partial class MigracionInicialBooks
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -84,7 +84,7 @@ namespace Proyecto_2Parcial.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genre");
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("App_Libreria_Comunitaria.Models.Review", b =>

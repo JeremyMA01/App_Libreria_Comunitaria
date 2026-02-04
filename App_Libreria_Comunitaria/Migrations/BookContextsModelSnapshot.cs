@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Proyecto_2Parcial.Migrations
 {
-    [DbContext(typeof(ReviewContexts))]
-    partial class ReviewContextsModelSnapshot : ModelSnapshot
+    [DbContext(typeof(BookContexts))]
+    partial class BookContextsModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -81,7 +81,7 @@ namespace Proyecto_2Parcial.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genre");
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("App_Libreria_Comunitaria.Models.Review", b =>

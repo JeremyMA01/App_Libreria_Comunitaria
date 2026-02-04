@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Proyecto_2Parcial.Migrations
 {
     /// <inheritdoc />
-    public partial class LibreriaComunitariaBD : Migration
+    public partial class MigracionInicialBooks : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Genre",
+                name: "Genres",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -22,7 +22,7 @@ namespace Proyecto_2Parcial.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Genre", x => x.Id);
+                    table.PrimaryKey("PK_Genres", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -44,9 +44,9 @@ namespace Proyecto_2Parcial.Migrations
                 {
                     table.PrimaryKey("PK_books", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_books_Genre_GenreId",
+                        name: "FK_books_Genres_GenreId",
                         column: x => x.GenreId,
-                        principalTable: "Genre",
+                        principalTable: "Genres",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -97,7 +97,7 @@ namespace Proyecto_2Parcial.Migrations
                 name: "books");
 
             migrationBuilder.DropTable(
-                name: "Genre");
+                name: "Genres");
         }
     }
 }
