@@ -13,9 +13,14 @@ namespace App_Libreria_Comunitaria.Contexts
 
         public DbSet<Review> reviews { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        // optionsBuilder.UseSqlServer("Server=localhost;Database=BookPoyecto;User ID=sa;Password=1234;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
+        // }
+
+        public BookContexts(DbContextOptions<BookContexts> options)
+             : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=BookPoyecto;User ID=sa;Password=1234;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

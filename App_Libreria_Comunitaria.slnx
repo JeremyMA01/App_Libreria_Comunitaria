@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ApiBooks/ApiBooks.csproj" Id="a2e2f5c7-d40e-4a45-9353-620638383f53" />
   <Project Path="App_Libreria_Comunitaria/App_Libreria_Comunitaria.csproj" />
   <Project Path="PruebasProyecto/PruebasProyecto.csproj" />
 </Solution>
