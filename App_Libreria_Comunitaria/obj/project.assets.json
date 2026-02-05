@@ -4106,23 +4106,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CRISTHIAN\\.nuget\\packages\\": {},
+    "C:\\Users\\Jerem\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+      "projectUniqueName": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
       "projectName": "App_Libreria_Comunitaria",
-      "projectPath": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
-      "packagesPath": "C:\\Users\\CRISTHIAN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
+      "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+      "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
+      "outputPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CRISTHIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4473,5 +4473,13 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

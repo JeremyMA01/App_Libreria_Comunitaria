@@ -1,6 +1,5 @@
 <Solution>
-  <Project Path="ApiBooks/ApiBooks.csproj" Id="a2e2f5c7-d40e-4a45-9353-620638383f53" />
+  <Project Path="ApiBooks/ApiLibreria.csproj" Id="a2e2f5c7-d40e-4a45-9353-620638383f53" />
   <Project Path="App_Libreria_Comunitaria/App_Libreria_Comunitaria.csproj" />
   <Project Path="PruebasProyecto/PruebasProyecto.csproj" />
-  <Project Path="WebApplication1/ApiLibreria.csproj" Id="44e8dc31-c6e0-4dc3-91f1-559e1497d4fd" />
 </Solution>

@@ -11,20 +11,11 @@ namespace App_Libreria_Comunitaria.Contexts
         public DbSet<Book> books { get; set; }
         public DbSet<Genre> Genres { get; set; }
 
-<<<<<<< HEAD
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-=======
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
         public DbSet<Review> reviews { get; set; }
-
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        // optionsBuilder.UseSqlServer("Server=localhost;Database=BookPoyecto;User ID=sa;Password=1234;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
-        // }
 
         public BookContexts(DbContextOptions<BookContexts> options)
              : base(options)
->>>>>>> 73402f265e4da2d84e943d9456eef9fb2553c276
         {
         }
 
@@ -38,7 +29,7 @@ namespace App_Libreria_Comunitaria.Contexts
             modelBuilder.Entity<Review>()
                  .HasOne(r => r.Book)
                  .WithMany(b => b.Review)
-                 .HasForeignKey(r => r.IdBook);
+                 .HasForeignKey(r => r.id_book);
 
             base.OnModelCreating(modelBuilder);
         }

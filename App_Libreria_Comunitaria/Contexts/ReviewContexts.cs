@@ -27,7 +27,7 @@ namespace App_Libreria_Comunitaria.Contexts
             modelBuilder.Entity<Review>()
                  .HasOne(r => r.Book)
                  .WithMany(b => b.Review)
-                 .HasForeignKey(r => r.IdBook);
+                 .HasForeignKey(r => r.id_book);
 
             /*
             modelBuilder.Entity<Review>()

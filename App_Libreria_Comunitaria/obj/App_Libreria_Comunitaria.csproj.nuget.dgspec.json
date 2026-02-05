@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {}
+    "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+    "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
         "projectName": "App_Libreria_Comunitaria",
-        "projectPath": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
-        "packagesPath": "C:\\Users\\CRISTHIAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRISTHIAN\\Videos\\Captures\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
+        "projectPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
+        "outputPath": "C:\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CRISTHIAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

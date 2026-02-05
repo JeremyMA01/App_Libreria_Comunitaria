@@ -8,7 +8,7 @@ namespace App_Libreria_Comunitaria.Models
     {
         public int Id { get; set; }
         public int IdUser { get; set; }
-        public int IdBook { get; set; }
+        public int id_book { get; set; }
         public string User { get; set; }
         public int Score { get; set; }
         public string Comment { get; set; }

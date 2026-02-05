@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiBooks.csproj": {}
+    "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiLibreria.csproj": {}
   },
   "projects": {
-    "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiBooks.csproj": {
+    "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiLibreria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiBooks.csproj",
-        "projectName": "ApiBooks",
-        "projectPath": "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiBooks.csproj",
+        "projectUniqueName": "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiLibreria.csproj",
+        "projectName": "ApiLibreria",
+        "projectPath": "C:\\App_Libreria_Comunitaria\\ApiBooks\\ApiLibreria.csproj",
         "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
         "outputPath": "C:\\App_Libreria_Comunitaria\\ApiBooks\\obj\\",
         "projectStyle": "PackageReference",
