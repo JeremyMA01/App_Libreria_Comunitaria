@@ -28,6 +28,7 @@ C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\App_Libreria_Comunitaria\ob
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.pdb
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll
+<<<<<<< HEAD
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.AssemblyReference.cache
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.GeneratedMSBuildEditorConfig.editorconfig
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfoInputs.cache
@@ -43,3 +44,20 @@ C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libre
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.pdb
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
 C:\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll
+=======
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.deps.json
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.runtimeconfig.json
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.AssemblyReference.cache
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfoInputs.cache
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfo.cs
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.CoreCompileInputs.cache
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.sourcelink.json
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\refint\App_Libreria_Comunitaria.dll
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
+C:\Users\CRISTHIAN\Videos\Captures\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll
+>>>>>>> 73402f265e4da2d84e943d9456eef9fb2553c276
