@@ -31,7 +31,7 @@ namespace ApiBooks.Controllers
 
             if (book == null)
             {
-                return NotFound();
+                return NotFound("Libro no encontrado");
             }
 
             return book;
@@ -57,7 +57,7 @@ namespace ApiBooks.Controllers
             {
                 if (!BookExists(id))
                 {
-                    return NotFound();
+                    return NotFound("libro no encontrado");
                 }
                 else
                 {
@@ -86,7 +86,7 @@ namespace ApiBooks.Controllers
             var book = await _context.books.FindAsync(id);
             if (book == null)
             {
-                return NotFound();
+                return NotFound("Libro no encontrado");
             }
 
             _context.books.Remove(book);
@@ -99,5 +99,52 @@ namespace ApiBooks.Controllers
         {
             return _context.books.Any(e => e.Id == id);
         }
+
+        // PUT: api/genres/deactivate/{id}
+        [HttpPut("deactivate/{id}")]
+        public async Task<IActionResult> DeactivateMovie(int id)
+        {
+            var book = await _context.books.FindAsync(id);
+            if (book == null)
+            {
+                return NotFound("libro no encontrado.");
+            }
+
+            book.Active = false;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                return StatusCode(500, "Error al actualizar el libro");
+            }
+            return NoContent();
+        }
+    
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchBooks(string? search, int? genreId)
+        {
+            var booksQuery = _context.books.Include(m => m.Genre).Where(m => m.Active).AsQueryable();
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                booksQuery = booksQuery.Where(m => m.Title.Contains(search));
+            }
+
+            if (genreId != null)
+            {
+                booksQuery = booksQuery.Where(m => m.Genre.Id == genreId);
+            }
+
+            var books = await booksQuery.ToListAsync();
+            if (!books.Any())
+            {
+                return NotFound("No se encontraron libros que coincidan con los criterios.");
+            }
+            return Ok(books);
+        }
+
     }
 }
