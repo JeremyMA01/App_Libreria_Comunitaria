@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 using (var context = new LibreriaContexts())
 {
-    
+
     var genres = new List<Genre>
     {
         new Genre { Name = "Romance", Active = true },
@@ -24,14 +24,14 @@ using (var context = new LibreriaContexts())
     };
 
     context.Genres.AddRange(genres);
-    context.SaveChanges(); 
+    context.SaveChanges();
 
-    
+
     var books = new List<Book>
     {
         new Book
         {
-            
+
             Title = "Cien Años de Soledad",
             Author = "Gabriel García Márquez",
             Year = 1967,
@@ -43,7 +43,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "1984",
             Author = "George Orwell",
             Year = 1949,
@@ -55,7 +55,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "El Hobbit",
             Author = "J.R.R. Tolkien",
             Year = 1937,
@@ -67,7 +67,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "El Código Da Vinci",
             Author = "Dan Brown",
             Year = 2003,
@@ -79,7 +79,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Orgullo y Prejuicio",
             Author = "Jane Austen",
             Year = 1813,
@@ -91,7 +91,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Viaje al Centro de la Tierra",
             Author = "Jules Verne",
             Year = 1864,
@@ -103,7 +103,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Sapiens: De Animales a Dioses",
             Author = "Yuval Noah Harari",
             Year = 2011,
@@ -115,7 +115,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-          
+
             Title = "El Diario de Ana Frank",
             Author = "Ana Frank",
             Year = 1947,
@@ -127,7 +127,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-           
+
             Title = "Cien Sonetos de Amor",
             Author = "Pablo Neruda",
             Year = 1956,
@@ -139,7 +139,7 @@ using (var context = new LibreriaContexts())
         }
     };
 
-    context.books.AddRange(books); 
+    context.books.AddRange(books);
     context.SaveChanges();
 
     var reviews = new List<Review>
@@ -190,7 +190,31 @@ using (var context = new LibreriaContexts())
         PublishedDate = new DateTime(2025, 02, 04)
     }
 };
+    if (!context.Usuarios.Any())
+    {
+        var usuarios = new List<Usuario>
+       {
+           new Usuario
+           {
+               Nombre = "Juan Pérez",
+               Email = "juan@mail.com",
+               Password = "123456",
+               Ciudad = "Guayaquil",
+               Rol = "Admin",
+               Active = true
+           },
+           new Usuario
+           {
+               Nombre = "María López",
+               Email = "maria@mail.com",
+               Password = "123456",
+               Ciudad = "Quito",
+               Rol = "Usuario",
+               Active = true
+           }
+       };
 
-    context.reviews.AddRange(reviews);
-    context.SaveChanges();
+        context.reviews.AddRange(reviews);
+        context.SaveChanges();
+    }
 }
