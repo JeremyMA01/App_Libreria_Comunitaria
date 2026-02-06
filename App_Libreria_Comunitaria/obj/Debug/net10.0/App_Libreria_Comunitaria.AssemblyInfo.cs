@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App_Libreria_Comunitaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec71d32f2a7e53d2813b8a278a8e76a46539f155")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a4e2cf2d3b8f9b26c69d7f7a755a857bf99b8a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("App_Libreria_Comunitaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App_Libreria_Comunitaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

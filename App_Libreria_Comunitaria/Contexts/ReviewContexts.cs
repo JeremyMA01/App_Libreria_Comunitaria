@@ -19,7 +19,7 @@ namespace App_Libreria_Comunitaria.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=AppLibreriaDB;User ID=sa;Password=sa123;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=AppLibreriaDB;User ID=sa;Password=sa123;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

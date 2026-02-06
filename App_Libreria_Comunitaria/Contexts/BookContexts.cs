@@ -10,14 +10,17 @@ namespace App_Libreria_Comunitaria.Contexts
     {
         public DbSet<Book> books { get; set; }
         public DbSet<Genre> Genres { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
         public DbSet<Review> reviews { get; set; }
 
         public BookContexts(DbContextOptions<BookContexts> options)
-             : base(options)
+            : base(options) { }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
+            
+        
         }
+
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

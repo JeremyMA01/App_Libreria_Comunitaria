@@ -141,5 +141,57 @@ using (var context = new BookContexts())
     };
 
     context.books.AddRange(books); 
-    context.SaveChanges(); 
+    context.SaveChanges();
+    // Seed de Reviews
+    var reviews = new List<Review>
+{
+    new Review
+    {
+        User = "Sofia Garcia",
+        Score = 5,
+        Comment = "Una obra maestra de la literatura distópica. Imprescindible.",
+        IsRecommend = true,
+        id_book = 2, // 1984
+        PublishedDate = new DateTime(2025, 01, 15)
+    },
+    new Review
+    {
+        User = "David Vera",
+        Score = 5,
+        Comment = "La mejor aventura fantástica que he leído. Tolkien es un genio.",
+        IsRecommend = true,
+        id_book = 3, // El Hobbit
+        PublishedDate = new DateTime(2025, 02, 01)
+    },
+    new Review
+    {
+        User = "Elena Torres",
+        Score = 4,
+        Comment = "Muy interesante para entender la historia de nuestra especie.",
+        IsRecommend = true,
+        id_book = 8, // Sapiens
+        PublishedDate = new DateTime(2025, 01, 20)
+    },
+    new Review
+    {
+        User = "Maria Lopez",
+        Score = 3,
+        Comment = "El libro es bueno, pero el ritmo se me hizo un poco lento al principio.",
+        IsRecommend = true,
+        id_book = 1, // Cien Años de Soledad
+        PublishedDate = new DateTime(2025, 02, 03)
+    },
+    new Review
+    {
+        User = "Erick Gomez",
+        Score = 5,
+        Comment = "Misterio puro desde la primera página. No pude dejar de leerlo.",
+        IsRecommend = true,
+        id_book = 4, // El Código Da Vinci
+        PublishedDate = new DateTime(2025, 02, 04)
+    }
+};
+
+    context.books.AddRange(reviews);
+    context.SaveChanges();
 }

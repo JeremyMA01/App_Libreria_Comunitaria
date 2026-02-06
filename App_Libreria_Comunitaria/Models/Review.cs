@@ -13,7 +13,7 @@ namespace App_Libreria_Comunitaria.Models
         public int Score { get; set; }
         public string Comment { get; set; }
         public bool IsRecommend { get; set; }
-        public DateTime PublishDate { get; set; }
+        public DateTime PublishedDate { get; set; }
         public virtual Book Book { get; set; }
         //public virtual User User { get; set; } 
     }
