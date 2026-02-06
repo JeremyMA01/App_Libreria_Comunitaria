@@ -217,4 +217,68 @@ using (var context = new LibreriaContexts())
         context.reviews.AddRange(reviews);
         context.SaveChanges();
     }
+
+
+    var categories = new List<Category>
+    {
+         new Category
+         {
+             Name = "Infantil",
+             Description = "Libros para niños de todas las edades",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Juvenil",
+             Description = "Libros dirigidos a adolescentes y jóvenes adultos",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Académicos",
+             Description = "Libros de estudio y material educativo",
+             CreatedDate = new DateTime(2025, 11, 9),
+             Active = true
+         },
+         new Category
+         {
+             Name = "Autoayuda",
+             Description = "Libros de desarrollo personal y superación",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Religión",
+             Description = "Libros sobre temas espirituales y religiosos",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Negocios",
+             Description = "Libros sobre emprendimiento, finanzas y management",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Cocina",
+             Description = "Libros de recetas y técnicas culinarias",
+             Active = false
+         },
+         new Category
+         {
+             Name = "Ficcion",
+             Description = "sjkfnkdf",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Ficcion",
+             Description = "hola mundo",
+             CreatedDate = new DateTime(2025, 12, 9),
+             Active = true
+         }
+     };
+
+    context.Categories.AddRange(categories);
+    context.SaveChanges();
 }
