@@ -46,11 +46,11 @@ namespace ApiLibreria.Controllers
             Nota: Implementado en el FrontEnd
         */
         [HttpGet("Book/{id_book}")]
-        public async Task<ActionResult<IEnumerable<Review>>> GetReviewsBook(int id_book)
+        public async Task<ActionResult<IEnumerable<Review>>> getReviewsBook(int id_book)
         {
             var review = await _context.reviews
                 .AsNoTracking()
-                .Where(r => r.id_book == id_book)
+                .Where(r => r.Id_Book == id_book)
                 .ToListAsync();
 
             return Ok(review);
@@ -167,7 +167,7 @@ namespace ApiLibreria.Controllers
         public async Task<ActionResult<IEnumerable<Review>>> searchUserReview(string user, int id_book)
         {
             var query = _context.reviews.AsNoTracking().
-                Where(r => r.id_book == id_book);
+                Where(r => r.Id_Book == id_book);
 
             if (!string.IsNullOrEmpty(user))
             {
