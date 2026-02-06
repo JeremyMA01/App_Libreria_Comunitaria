@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Proyecto_2Parcial.Migrations
 {
-    [DbContext(typeof(BookContexts))]
+    [DbContext(typeof(LibreriaContexts))]
     [Migration("20260204151854_MigracionInicialBooks")]
     partial class MigracionInicialBooks
     {

@@ -3,8 +3,7 @@ using App_Libreria_Comunitaria.Contexts;
 using App_Libreria_Comunitaria.Models;
 using Microsoft.EntityFrameworkCore;
 
-
-using (var context = new BookContexts())
+using (var context = new LibreriaContexts())
 {
     
     var genres = new List<Genre>
@@ -142,7 +141,7 @@ using (var context = new BookContexts())
 
     context.books.AddRange(books); 
     context.SaveChanges();
-    // Seed de Reviews
+
     var reviews = new List<Review>
 {
     new Review
@@ -192,6 +191,6 @@ using (var context = new BookContexts())
     }
 };
 
-    context.books.AddRange(reviews);
+    context.reviews.AddRange(reviews);
     context.SaveChanges();
 }

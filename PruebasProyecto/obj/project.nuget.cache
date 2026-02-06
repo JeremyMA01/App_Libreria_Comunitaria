@@ -68,15 +68,5 @@
     "C:\\Users\\Jerem\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.4\\system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "C:\\Users\\Jerem\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.4\\system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "message": "Problema al leer el archivo de caché C:\\App_Libreria_Comunitaria\\PruebasProyecto\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0.",
-      "projectPath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

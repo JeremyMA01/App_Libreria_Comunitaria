@@ -3,18 +3,24 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-//agregado
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Configuración de la conexión a la base de datos
-builder.Services.AddDbContext<BookContexts>(options =>
+builder.Services.AddDbContext<LibreriaContexts>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp",
+        builder => builder.AllowAnyOrigin() //Cualquier método URl
+    .AllowAnyMethod() //Cualquier método GET - POST
+    .AllowAnyHeader()); // Cualquier encabezado
+}
+);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,9 +34,7 @@ if (app.Environment.IsDevelopment())
 
 
 
-
+app.UseCors("AllowAngularApp");
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

@@ -14,9 +14,9 @@ namespace ApiLibreria.Controllers
     [ApiController]
     public class ReviewsController : ControllerBase
     {
-        private readonly BookContexts _context;
+        private readonly LibreriaContexts _context;
 
-        public ReviewsController(BookContexts context)
+        public ReviewsController(LibreriaContexts context)
         {
             _context = context;
         }

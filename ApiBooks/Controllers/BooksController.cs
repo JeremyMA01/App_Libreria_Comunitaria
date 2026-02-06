@@ -9,9 +9,9 @@ namespace ApiBooks.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly BookContexts _context;
+        private readonly LibreriaContexts _context;
 
-        public BooksController(BookContexts context)
+        public BooksController(LibreriaContexts context)
         {
             _context = context;
         }

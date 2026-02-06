@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Proyecto_2Parcial.Migrations
 {
-    [DbContext(typeof(BookContexts))]
+    [DbContext(typeof(LibreriaContexts))]
     partial class BookContextsModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

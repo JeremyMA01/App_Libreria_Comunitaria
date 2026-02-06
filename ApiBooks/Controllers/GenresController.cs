@@ -14,9 +14,9 @@ namespace ApiBooks.Controllers
     [ApiController]
     public class GenresController : ControllerBase
     {
-        private readonly BookContexts _context;
+        private readonly LibreriaContexts _context;
 
-        public GenresController(BookContexts context)
+        public GenresController(LibreriaContexts context)
         {
             _context = context;
         }
