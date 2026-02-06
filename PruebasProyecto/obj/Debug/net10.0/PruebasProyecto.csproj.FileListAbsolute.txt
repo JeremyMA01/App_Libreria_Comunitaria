@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.AssemblyInfo.cs
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\PruebasProyecto\obj\Debug\net10.0\PruebasProyecto.sourcelink.json

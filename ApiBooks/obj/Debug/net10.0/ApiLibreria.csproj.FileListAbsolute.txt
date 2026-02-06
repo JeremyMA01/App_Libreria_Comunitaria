@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.AssemblyInfo.cs
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\App_Libreria_Comunitaria4\ApiBooks\obj\Debug\net10.0\ApiLibreria.sourcelink.json
