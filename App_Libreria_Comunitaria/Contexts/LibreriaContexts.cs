@@ -13,6 +13,7 @@ namespace App_Libreria_Comunitaria.Contexts
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Review> reviews { get; set; }
+        public DbSet<Message> Messages { get; set; } = null!;
 
         public LibreriaContexts() : base() { }
         public LibreriaContexts(DbContextOptions<LibreriaContexts> options)
