@@ -13,11 +13,12 @@ namespace App_Libreria_Comunitaria.Contexts
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Review> reviews { get; set; }
         public LibreriaContexts() : base() { }
-        public LibreriaContexts(DbContextOptions<LibreriaContexts> options)
-            : base(options) { }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseSqlServer("Server=localhost;Database=AppLibreriaBD;User ID=sa;Password=sa123;Trusted_Connection=False;MultipleActiveResultSets=True;TrustServerCertificate=True;");
         }
+        public LibreriaContexts(DbContextOptions<LibreriaContexts> options) : base(options) { }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

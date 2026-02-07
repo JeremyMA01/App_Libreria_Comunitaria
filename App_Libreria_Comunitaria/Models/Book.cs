@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace App_Libreria_Comunitaria.Models
 {
@@ -17,6 +18,7 @@ namespace App_Libreria_Comunitaria.Models
         public string Poster {  get; set; }
 
         public virtual Genre Genre { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Review> Review { get; set; }
 
     }

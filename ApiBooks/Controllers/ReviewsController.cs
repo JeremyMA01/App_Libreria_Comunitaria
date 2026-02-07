@@ -36,7 +36,7 @@ namespace ApiLibreria.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Review>>> getReviews()
         {
-            return await _context.reviews.ToListAsync();
+            return await _context.reviews.Include(r => r.Book).ToListAsync();
         }
 
 
@@ -63,14 +63,26 @@ namespace ApiLibreria.Controllers
         */
         // POST: api/Reviews
         [HttpPost]
-        public async Task<ActionResult<Review>> addReview(Review review)
+        public async Task<ActionResult<Review>> addReview( [FromBody]Review review)
         {
-            _context.reviews.Add(review);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetReview", new { id = review.Id }, review);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                _context.reviews.Add(review);
+                await _context.SaveChangesAsync(); // SQL generará el Id Identity aquí
+
+                return Ok(review);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new { message = ex.InnerException?.Message ?? ex.Message });
+            }
+            
         }
-
         /*
             Función: Actualiza las Reseñas en la Base de Datos.
             Nota: Implementado en el FrontEnd
