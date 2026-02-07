@@ -191,34 +191,35 @@ using (var context = new LibreriaContexts())
         PublishedDate = new DateTime(2025, 02, 04)
     }
 };
-    if (!context.Usuarios.Any())
+
+    context.reviews.AddRange(reviews);
+    context.SaveChanges();
+
+    // 1. Asegúrate de que los objetos estén DENTRO de las llaves { } de la lista
+    var usuarios = new List<Usuario>
+{
+    new Usuario
     {
-        var usuarios = new List<Usuario>
-       {
-           new Usuario
-           {
-               Nombre = "Juan Pérez",
-               Email = "juan@mail.com",
-               Password = "123456",
-               Ciudad = "Guayaquil",
-               Rol = "Admin",
-               Active = true
-           },
-           new Usuario
-           {
-               Nombre = "María López",
-               Email = "maria@mail.com",
-               Password = "123456",
-               Ciudad = "Quito",
-               Rol = "Usuario",
-               Active = true
-           }
-       };
-
-        context.reviews.AddRange(reviews);
-        context.SaveChanges();
+        Nombre = "Juan Pérez",
+        Email = "juan@mail.com",
+        Password = "123456",
+        Ciudad = "Guayaquil",
+        Rol = "Admin",
+        Active = true
+    },
+    new Usuario
+    {
+        Nombre = "María López",
+        Email = "maria@mail.com",
+        Password = "123456",
+        Ciudad = "Quito",
+        Rol = "Usuario",
+        Active = true
     }
+}; 
 
+    context.Usuarios.AddRange(usuarios);
+    context.SaveChanges();
 
     var categories = new List<Category>
     {
@@ -283,3 +284,6 @@ using (var context = new LibreriaContexts())
     context.Categories.AddRange(categories);
     context.SaveChanges();
 }
+
+
+

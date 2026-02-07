@@ -37,8 +37,7 @@ namespace App_Libreria_Comunitaria.Contexts
                 .WithMany(g => g.Books)
                 .HasForeignKey(m => m.GenreId);
             });
-                
-
+            
             modelBuilder.Entity<Review>(entity =>
             {
                 entity.HasKey(r => r.Id);

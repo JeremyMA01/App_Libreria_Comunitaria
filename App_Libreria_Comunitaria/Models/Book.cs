@@ -17,9 +17,9 @@ namespace App_Libreria_Comunitaria.Models
         public decimal? Budget { get; set; }
         public string Poster {  get; set; }
 
-        public virtual Genre Genre { get; set; }
+        public virtual Genre? Genre { get; set; }
         [JsonIgnore]
-        public virtual ICollection<Review> Review { get; set; }
+        public virtual ICollection<Review>? Review { get; set; }
 
     }
 }
