@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 using (var context = new LibreriaContexts())
 {
-    
+
     var genres = new List<Genre>
     {
         new Genre { Name = "Romance", Active = true },
@@ -25,14 +25,14 @@ using (var context = new LibreriaContexts())
     };
 
     context.Genres.AddRange(genres);
-    context.SaveChanges(); 
+    context.SaveChanges();
 
-    
+
     var books = new List<Book>
     {
         new Book
         {
-            
+
             Title = "Cien Años de Soledad",
             Author = "Gabriel García Márquez",
             Year = 1967,
@@ -44,7 +44,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "1984",
             Author = "George Orwell",
             Year = 1949,
@@ -56,7 +56,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "El Hobbit",
             Author = "J.R.R. Tolkien",
             Year = 1937,
@@ -68,7 +68,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "El Código Da Vinci",
             Author = "Dan Brown",
             Year = 2003,
@@ -80,7 +80,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Orgullo y Prejuicio",
             Author = "Jane Austen",
             Year = 1813,
@@ -92,7 +92,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Viaje al Centro de la Tierra",
             Author = "Jules Verne",
             Year = 1864,
@@ -104,7 +104,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-            
+
             Title = "Sapiens: De Animales a Dioses",
             Author = "Yuval Noah Harari",
             Year = 2011,
@@ -116,7 +116,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-          
+
             Title = "El Diario de Ana Frank",
             Author = "Ana Frank",
             Year = 1947,
@@ -128,7 +128,7 @@ using (var context = new LibreriaContexts())
         },
         new Book
         {
-           
+
             Title = "Cien Sonetos de Amor",
             Author = "Pablo Neruda",
             Year = 1956,
@@ -140,7 +140,7 @@ using (var context = new LibreriaContexts())
         }
     };
 
-    context.books.AddRange(books); 
+    context.books.AddRange(books);
     context.SaveChanges();
 
     var reviews = new List<Review>
@@ -191,7 +191,95 @@ using (var context = new LibreriaContexts())
         PublishedDate = new DateTime(2025, 02, 04)
     }
 };
+    if (!context.Usuarios.Any())
+    {
+        var usuarios = new List<Usuario>
+       {
+           new Usuario
+           {
+               Nombre = "Juan Pérez",
+               Email = "juan@mail.com",
+               Password = "123456",
+               Ciudad = "Guayaquil",
+               Rol = "Admin",
+               Active = true
+           },
+           new Usuario
+           {
+               Nombre = "María López",
+               Email = "maria@mail.com",
+               Password = "123456",
+               Ciudad = "Quito",
+               Rol = "Usuario",
+               Active = true
+           }
+       };
 
-    context.reviews.AddRange(reviews);
+        context.reviews.AddRange(reviews);
+        context.SaveChanges();
+    }
+
+
+    var categories = new List<Category>
+    {
+         new Category
+         {
+             Name = "Infantil",
+             Description = "Libros para niños de todas las edades",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Juvenil",
+             Description = "Libros dirigidos a adolescentes y jóvenes adultos",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Académicos",
+             Description = "Libros de estudio y material educativo",
+             CreatedDate = new DateTime(2025, 11, 9),
+             Active = true
+         },
+         new Category
+         {
+             Name = "Autoayuda",
+             Description = "Libros de desarrollo personal y superación",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Religión",
+             Description = "Libros sobre temas espirituales y religiosos",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Negocios",
+             Description = "Libros sobre emprendimiento, finanzas y management",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Cocina",
+             Description = "Libros de recetas y técnicas culinarias",
+             Active = false
+         },
+         new Category
+         {
+             Name = "Ficcion",
+             Description = "sjkfnkdf",
+             Active = true
+         },
+         new Category
+         {
+             Name = "Ficcion",
+             Description = "hola mundo",
+             CreatedDate = new DateTime(2025, 12, 9),
+             Active = true
+         }
+     };
+
+    context.Categories.AddRange(categories);
     context.SaveChanges();
 }
