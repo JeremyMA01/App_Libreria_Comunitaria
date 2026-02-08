@@ -1,0 +1,15 @@
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.deps.json
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.runtimeconfig.json
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.AssemblyReference.cache
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfoInputs.cache
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfo.cs
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.CoreCompileInputs.cache
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.sourcelink.json
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\refint\App_Libreria_Comunitaria.dll
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll

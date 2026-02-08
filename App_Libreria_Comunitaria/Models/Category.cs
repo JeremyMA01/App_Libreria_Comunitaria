@@ -12,7 +12,7 @@ namespace App_Libreria_Comunitaria.Models
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public bool Active { get; set; } = true;
 
-        // Relación con libros
+        
         //public List<Book> Books { get; set; } = new();
     }
 }

@@ -17,14 +17,14 @@ namespace ApiBooks.Controllers
             _context = context;
         }
 
-        // GET: api/Categories
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
             return await _context.Categories.ToListAsync();
         }
 
-        // GET: api/Categories/5
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
@@ -38,7 +38,7 @@ namespace ApiBooks.Controllers
             return category;
         }
 
-        // PUT: api/Categories/5
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategory(int id, Category category)
         {
@@ -47,7 +47,7 @@ namespace ApiBooks.Controllers
                 return BadRequest("El ID de la categoría no coincide");
             }
 
-            // Validaciones adicionales
+            
             var validationResult = ValidateCategory(category);
             if (!string.IsNullOrEmpty(validationResult))
             {
@@ -75,7 +75,7 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Categoría actualizada exitosamente" });
         }
 
-        // POST: api/Categories
+        
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
@@ -98,7 +98,7 @@ namespace ApiBooks.Controllers
             return CreatedAtAction("GetCategory", new { id = category.Id }, category);
         }
 
-        // DELETE: api/Categories/5
+        
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
@@ -115,7 +115,7 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Categoría eliminada exitosamente" });
         }
 
-        // GET: api/Categories/search?search=term
+        
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Category>>> SearchCategories(string? search)
         {
@@ -139,7 +139,7 @@ namespace ApiBooks.Controllers
             return categories;
         }
 
-        // PUT: api/Categories/deactivate/5
+        
         [HttpPut("deactivate/{id}")]
         public async Task<IActionResult> DeactivateCategory(int id)
         {
@@ -163,7 +163,7 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Categoría desactivada exitosamente" });
         }
 
-        // PUT: api/Categories/activate/5
+        
         [HttpPut("activate/{id}")]
         public async Task<IActionResult> ActivateCategory(int id)
         {
@@ -187,7 +187,7 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Categoría activada exitosamente" });
         }
 
-        // GET: api/Categories/active
+        
         [HttpGet("active")]
         public async Task<ActionResult<IEnumerable<Category>>> GetActiveCategories()
         {
