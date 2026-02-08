@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {}
+    "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+    "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "projectUniqueName": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
         "projectName": "App_Libreria_Comunitaria",
-        "projectPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
-        "packagesPath": "C:\\Users\\segun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
+        "projectPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "packagesPath": "C:\\Users\\Jhon hector\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\segun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jhon hector\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.2, )"

@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.AspNetCore.Authorization;
+
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class UsuariosController : ControllerBase
