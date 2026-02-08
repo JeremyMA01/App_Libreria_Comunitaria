@@ -14,8 +14,14 @@ public class Usuario
     [Required]
     public string Password { get; set; } = null!;
 
+   
+    [StringLength(15)]
+    public string? Telefono { get; set; }
+
+    [Required]
     public string Ciudad { get; set; } = null!;
 
+    [Required]
     public string Rol { get; set; } = "Usuario";
 
     public bool Active { get; set; } = true;
