@@ -22,6 +22,7 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login(LoginModel login)
     {
+        // Buscamos al usuario por correo, contraseña y estado activo
         var usuario = _context.Usuarios.FirstOrDefault(u =>
             u.Email == login.Email &&
             u.Password == login.Password &&
@@ -30,6 +31,7 @@ public class AuthController : ControllerBase
         if (usuario == null)
             return Unauthorized("Credenciales incorrectas");
 
+        // Preparamos la información que viajará dentro del Token
         var claims = new[]
         {
             new Claim(ClaimTypes.Name, usuario.Email),
@@ -37,8 +39,9 @@ public class AuthController : ControllerBase
             new Claim("UserId", usuario.Id.ToString())
         };
 
+        // Generamos la firma de seguridad
         var key = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(_config["Jwt:Key"])
+            Encoding.UTF8.GetBytes(_config["Jwt:Key"] ?? "ClaveSecretaDeEmergenciaDe32Caracteres")
         );
 
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -51,9 +54,11 @@ public class AuthController : ControllerBase
             signingCredentials: creds
         );
 
+        // RESPUESTA CORREGIDA: Ahora enviamos el rol explícitamente
         return Ok(new
         {
-            token = new JwtSecurityTokenHandler().WriteToken(token)
+            token = new JwtSecurityTokenHandler().WriteToken(token),
+            rol = usuario.Rol // <--- Línea agregada para el menú de Angular
         });
     }
 }

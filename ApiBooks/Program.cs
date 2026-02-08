@@ -1,4 +1,4 @@
-using App_Libreria_Comunitaria.Contexts;
+锘縰sing App_Libreria_Comunitaria.Contexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -6,7 +6,15 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1. Configuraci贸n de Controladores y Swagger
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// 2. Configuraci贸n de JWT con validaci贸n de nulidad (EVITA EL ERROR DE PANTALLA NEGRA)
+var jwtKey = builder.Configuration["Jwt:Key"] ?? "ClaveSecretaDeRespaldoDe32CaracteresMinimo!!"; // Si es nulo, usa esta
+var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
@@ -16,47 +24,40 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])
-        )
+        ValidIssuer = builder.Configuration["Jwt:Issuer"] ?? "MiLibreriaApi",
+        ValidAudience = builder.Configuration["Jwt:Audience"] ?? "LibroStoreAngular",
+        IssuerSigningKey = new SymmetricSecurityKey(keyBytes)
     };
 });
 
-builder.Services.AddOpenApi();
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-// Configuraci髇 de la conexi髇 a la base de datos
+// 3. Base de Datos
 builder.Services.AddDbContext<LibreriaContexts>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// 4. Configuraci贸n de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularApp",
-        builder => builder.AllowAnyOrigin() //Cualquier m閠odo URl
-    .AllowAnyMethod() //Cualquier m閠odo GET - POST
-    .AllowAnyHeader()); // Cualquier encabezado
-}
-);
+    options.AddPolicy("AllowAngularApp", policy =>
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 5. Pipeline de HTTP (EL ORDEN AQU脥 ES CR脥TICO)
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-    //agregado
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// 鈿狅笍 IMPORTANTE: El orden de estos middlewares debe ser exactamente este:
+app.UseCors("AllowAngularApp"); // Primero permitir el origen
 
+app.UseAuthentication();        // Segundo autenticar (驴qui茅n eres?)
+app.UseAuthorization();         // Tercero autorizar (驴qu茅 puedes hacer?)
 
-app.UseCors("AllowAngularApp");
-app.UseAuthorization();
-app.UseAuthentication(); 
-app.UseAuthorization();
 app.MapControllers();
+
 app.Run();

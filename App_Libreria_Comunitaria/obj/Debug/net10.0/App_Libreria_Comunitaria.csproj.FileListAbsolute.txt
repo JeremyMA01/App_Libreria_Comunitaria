@@ -13,3 +13,18 @@ C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\ob
 C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.pdb
 C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
 C:\Users\segun\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.deps.json
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.runtimeconfig.json
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\bin\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.AssemblyReference.cache
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfoInputs.cache
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.AssemblyInfo.cs
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.csproj.CoreCompileInputs.cache
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.sourcelink.json
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.dll
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\refint\App_Libreria_Comunitaria.dll
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.pdb
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\App_Libreria_Comunitaria.genruntimeconfig.cache
+C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\App_Libreria_Comunitaria\obj\Debug\net10.0\ref\App_Libreria_Comunitaria.dll

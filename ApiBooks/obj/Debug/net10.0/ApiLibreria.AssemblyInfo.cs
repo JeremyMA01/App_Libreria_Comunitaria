@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiLibreria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10eb0e9511f4fa4d62a3378e078cb8547021eb2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c66b9ee7943ab8a0744224fbb58ff18ad624e7dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiLibreria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiLibreria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
