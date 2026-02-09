@@ -673,6 +673,44 @@
         }
       }
     },
+    "/api/Donations/active": {
+      "get": {
+        "tags": [
+          "Donations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Donation"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Donation"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Donation"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Donations/{id}": {
       "get": {
         "tags": [
@@ -753,6 +791,29 @@
         }
       },
       "delete": {
+        "tags": [
+          "Donations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Donations/activate/{id}": {
+      "put": {
         "tags": [
           "Donations"
         ],
@@ -1958,6 +2019,9 @@
             "nullable": true
           },
           "convertedToInventory": {
+            "type": "boolean"
+          },
+          "active": {
             "type": "boolean"
           },
           "categoryId": {

@@ -16,6 +16,7 @@ namespace App_Libreria_Comunitaria.Models
         public DateTime DonationDate { get; set; } = DateTime.Now;
         public string DonatedBy { get; set; } 
         public bool ConvertedToInventory { get; set; } = false;
+        public bool Active { get; set; } = true;
 
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {}
+    "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+    "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "projectUniqueName": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
         "projectName": "App_Libreria_Comunitaria",
-        "projectPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
-        "packagesPath": "C:\\Users\\Jhon hector\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
+        "projectPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj",
+        "packagesPath": "C:\\Users\\segun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhon hector\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\segun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -373,20 +373,20 @@
         }
       }
     },
-    "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {
+    "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
+        "projectUniqueName": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
         "projectName": "PruebasProyecto",
-        "projectPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
-        "packagesPath": "C:\\Users\\Jhon hector\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\obj\\",
+        "projectPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\PruebasProyecto.csproj",
+        "packagesPath": "C:\\Users\\segun\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\PruebasProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhon hector\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\segun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -401,8 +401,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
-                "projectPath": "C:\\Users\\Jhon hector\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj"
+              "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj": {
+                "projectPath": "C:\\Users\\segun\\source\\repos\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria\\App_Libreria_Comunitaria.csproj"
               }
             }
           }

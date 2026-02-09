@@ -557,3 +557,4 @@ C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\ApiBooks\obj\Debug\ne
 C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\ApiBooks\obj\Debug\net10.0\ApiLibreria.pdb
 C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\ApiBooks\obj\Debug\net10.0\ApiLibreria.genruntimeconfig.cache
 C:\Users\Jhon hector\source\repos\App_Libreria_Comunitaria\ApiBooks\obj\Debug\net10.0\ref\ApiLibreria.dll
+C:\Users\segun\source\repos\App_Libreria_Comunitaria\ApiBooks\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

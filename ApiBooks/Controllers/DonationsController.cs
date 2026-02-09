@@ -27,7 +27,16 @@ namespace ApiBooks.Controllers
                 .ToListAsync();
         }
 
-        
+        [HttpGet("active")]
+        public async Task<ActionResult<IEnumerable<Donation>>> GetActiveDonations()
+        {
+            return await _context.Donations
+                .Include(d => d.Category)
+                .Where(d => d.Active)
+                .ToListAsync();
+        }
+
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Donation>> GetDonation(int id)
         {
@@ -86,18 +95,49 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Donación actualizada exitosamente" });
         }
 
-        
+        [HttpPut("activate/{id}")]
+        public async Task<IActionResult> ActivateDonation(int id)
+        {
+            var donation = await _context.Donations.FindAsync(id);
+            if (donation == null)
+            {
+                return NotFound("Donación no encontrada");
+            }
+
+            donation.Active = true;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!DonationExists(id))
+                {
+                    return NotFound("Donación no encontrada");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(new { message = "Donación reactivada exitosamente" });
+        }
+
+
         [HttpPost]
         public async Task<ActionResult<Donation>> PostDonation(Donation donation)
         {
-            
+            // Asegurar que Active sea true por defecto
+            donation.Active = true;
+
             var validationResult = ValidateDonation(donation);
             if (!string.IsNullOrEmpty(validationResult))
             {
                 return BadRequest(validationResult);
             }
 
-            
             if (!await _context.Categories.AnyAsync(c => c.Id == donation.CategoryId && c.Active))
             {
                 return BadRequest("La categoría seleccionada no existe o no está activa");
@@ -109,7 +149,7 @@ namespace ApiBooks.Controllers
             return CreatedAtAction("GetDonation", new { id = donation.Id }, donation);
         }
 
-        
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDonation(int id)
         {
@@ -119,13 +159,29 @@ namespace ApiBooks.Controllers
                 return NotFound("Donación no encontrada");
             }
 
-            _context.Donations.Remove(donation);
-            await _context.SaveChangesAsync();
+            // En lugar de eliminar físicamente, marcamos como inactivo
+            donation.Active = false;
 
-            return Ok(new { message = "Donación eliminada exitosamente" });
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!DonationExists(id))
+                {
+                    return NotFound("Donación no encontrada");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(new { message = "Donación desactivada exitosamente" });
         }
 
-        
+
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Donation>>> SearchDonations(string? search)
         {

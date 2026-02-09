@@ -216,7 +216,7 @@ using (var context = new LibreriaContexts())
         Rol = "Usuario",
         Active = true
     }
-}; 
+};
 
     context.Usuarios.AddRange(usuarios);
     context.SaveChanges();

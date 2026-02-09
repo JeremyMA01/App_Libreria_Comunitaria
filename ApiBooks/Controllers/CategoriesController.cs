@@ -108,14 +108,37 @@ namespace ApiBooks.Controllers
                 return NotFound("Categoría no encontrada");
             }
 
+ 
+            var hasActiveDonations = await _context.Donations
+                .AnyAsync(d => d.CategoryId == id && d.Active);
 
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
+            if (hasActiveDonations)
+            {
+                return BadRequest("No se puede desactivar la categoría porque tiene donaciones activas asociadas");
+            }
 
-            return Ok(new { message = "Categoría eliminada exitosamente" });
+            category.Active = false;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CategoryExists(id))
+                {
+                    return NotFound("Categoría no encontrada");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(new { message = "Categoría desactivada exitosamente" });
         }
 
-        
+
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Category>>> SearchCategories(string? search)
         {
@@ -163,7 +186,7 @@ namespace ApiBooks.Controllers
             return Ok(new { message = "Categoría desactivada exitosamente" });
         }
 
-        
+
         [HttpPut("activate/{id}")]
         public async Task<IActionResult> ActivateCategory(int id)
         {
@@ -181,13 +204,20 @@ namespace ApiBooks.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                return StatusCode(500, "Error al actualizar la categoría");
+                if (!CategoryExists(id))
+                {
+                    return NotFound("Categoría no encontrada");
+                }
+                else
+                {
+                    throw;
+                }
             }
 
-            return Ok(new { message = "Categoría activada exitosamente" });
+            return Ok(new { message = "Categoría reactivada exitosamente" });
         }
 
-        
+
         [HttpGet("active")]
         public async Task<ActionResult<IEnumerable<Category>>> GetActiveCategories()
         {
